@@ -1,150 +1,160 @@
-
 document.addEventListener('DOMContentLoaded', function() {
-  // Navbar scroll effect
+  // === SELETORES ===
   const navbar = document.querySelector('.navbar');
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
   const backToTop = document.querySelector('.back-to-top');
-  
-  // Navbar scroll
-  // Navbar scroll
-  window.addEventListener('scroll', function() {
-    if (navbar) {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    }
-    
-    // Back to top button
-    if (backToTop) {
-      if (window.scrollY > 300) {
-        backToTop.classList.add('active');
-      } else {
-        backToTop.classList.remove('active');
-      }
-    }
-  });
-  
-  // Mobile menu toggle
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', function() {
-      hamburger.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
+  const loadingScreen = document.getElementById('loading-screen');
+  const contactForm = document.querySelector('.contact-form');
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+  const reveals = document.querySelectorAll('.reveal');
+
+  // === 1. TELA DE CARREGAMENTO (LOADING) ===
+  if (loadingScreen) {
+    // Pequeno delay para garantir que a transição seja percebida
+    setTimeout(() => {
+      loadingScreen.classList.add('hidden');
+      setTimeout(() => {
+        loadingScreen.style.display = 'none';
+      }, 500);
+    }, 300);
   }
-  // Close mobile menu when clicking a link
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      navLinks.classList.remove('active');
-    });
-  });
-  
-  // Scroll reveal animation
-  function revealOnScroll() {
-    const reveals = document.querySelectorAll('.reveal');
-    
+
+  // === 2. EVENTOS DE SCROLL (Navbar & Back to Top) ===
+  const handleScroll = () => {
+    const scrollPos = window.scrollY;
+
+    // Efeito da Navbar
+    if (navbar) {
+      navbar.classList.toggle('scrolled', scrollPos > 50);
+    }
+
+    // Botão Voltar ao Topo
+    if (backToTop) {
+      backToTop.classList.toggle('active', scrollPos > 300);
+    }
+
+    // Animação Reveal on Scroll
     reveals.forEach(reveal => {
       const windowHeight = window.innerHeight;
       const elementTop = reveal.getBoundingClientRect().top;
       const revealPoint = 100;
-      
+
       if (elementTop < windowHeight - revealPoint) {
         reveal.classList.add('active');
       }
     });
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // Executa uma vez no início
+
+  // === 3. MENU MOBILE (HAMBURGER) ===
+  if (hamburger && navLinks) {
+    const toggleMenu = () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    };
+
+    hamburger.addEventListener('click', toggleMenu);
+
+    // Fecha o menu ao clicar em qualquer link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
   }
-  
-  window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll(); // Initialize
-  
-  // Project filtering
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const projectCards = document.querySelectorAll('.project-card');
-  
+
+  // === 4. FILTRO DE PROJETOS ===
   tabBtns.forEach(btn => {
     btn.addEventListener('click', function() {
-      // Remove active class from all buttons
-      tabBtns.forEach(btn => btn.classList.remove('active'));
-      // Add active class to clicked button
+      // Atualiza botões
+      tabBtns.forEach(b => b.classList.remove('active'));
       this.classList.add('active');
-      
+
       const filter = this.getAttribute('data-tab');
-      
-      // Filter projects
+
       projectCards.forEach(card => {
-        card.style.display = 'none';
+        // Animação de saída
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.9)';
         
-        if (filter === 'all' || card.getAttribute('data-category') === filter) {
-          card.style.display = 'block';
-          card.classList.add('show');
-        } else {
-          card.classList.remove('show');
-        }
+        setTimeout(() => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+              card.classList.add('show');
+            }, 50);
+          } else {
+            card.style.display = 'none';
+            card.classList.remove('show');
+          }
+        }, 300);
       });
     });
   });
-  
-  // Smooth scrolling for anchor links
+
+  // === 5. SCROLL SUAVE PARA LINKS INTERNOS ===
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      
       const targetId = this.getAttribute('href');
       if (targetId === '#') return;
-      
+
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
+        e.preventDefault();
+        const navHeight = 80; // Ajuste conforme a altura da sua navbar
+        const elementPosition = targetElement.offsetTop;
+        
         window.scrollTo({
-          top: targetElement.offsetTop - 80,
+          top: elementPosition - navHeight,
           behavior: 'smooth'
         });
       }
     });
   });
-  
-  // Form submission
-  const contactForm = document.querySelector('.contact-form');
+
+  // === 6. FORMULÁRIO DE CONTATO ===
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Here you would typically send the form data to a server
-      // For demonstration, we'll just show an alert
-      alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
-      this.reset();
+      // Simulação de envio
+      const btn = this.querySelector('button');
+      const originalText = btn.innerText;
+      
+      btn.innerText = 'Enviando...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
+        this.reset();
+        btn.innerText = originalText;
+        btn.disabled = false;
+      }, 1500);
     });
   }
-  
-  // Text animation
-  const textElements = document.querySelectorAll('.text');
+
+  // === 7. ANIMAÇÃO DE TEXTO (LOOPING) ===
+  const textElements = document.querySelectorAll('.hero .text');
   if (textElements.length > 0) {
+    let currentIndex = 0;
+    const states = ['first-text', 'sec-text', 'third-text'];
+
     setInterval(() => {
       textElements.forEach(text => {
-        if (text.classList.contains('first-text')) {
-          text.classList.remove('first-text');
-          text.classList.add('sec-text');
-        } else if (text.classList.contains('sec-text')) {
-          text.classList.remove('sec-text');
-          text.classList.add('third-text');
-        } else {
-          text.classList.remove('third-text');
-          text.classList.add('first-text');
-        }
+        // Remove todos os estados anteriores
+        states.forEach(state => text.classList.remove(state));
+        
+        // Aplica o novo estado
+        currentIndex = (currentIndex + 1) % states.length;
+        text.classList.add(states[currentIndex]);
       });
     }, 4000);
   }
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Remove tela de carregamento
-  const loadingScreen = document.getElementById('loading-screen');
-  if (loadingScreen) {
-    loadingScreen.classList.add('hidden');
-      setTimeout(() => {
-        loadingScreen.style.display = 'none';
-      }, 500); // tempo para o fade out
-    }
-  });
