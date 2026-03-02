@@ -14,7 +14,7 @@
 
 ## 🚀 Sobre Mim
 
-Olá! Sou o **Renegado**, um desenvolvedor de 16 anos apaixonado por infraestrutura de redes e automação. Minha jornada envolve a criação de ecossistemas digitais, desde a segurança de redes até o desenvolvimento de bots complexos e experiências imersivas em jogos.
+Olá! Sou o **Renegado**, um desenvolvedor de 17 anos apaixonado por infraestrutura de redes e automação. Minha jornada envolve a criação de ecossistemas digitais, desde a segurança de redes até o desenvolvimento de bots complexos e experiências imersivas em jogos.
 
 * 📡 **Analista de Redes:** Focado em segurança, protocolos e performance.
 * 🤖 **Bot Developer:** Especialista em automações avançadas para Discord e integrações de API.
