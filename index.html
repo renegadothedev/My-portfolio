@@ -3,18 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de Renegado - Analista de Redes e Desenvolvedor">
-  <title>Renegado | Portfólio</title>
+  <meta name="description" content="Portfólio de Renegado - Analista de Redes, Desenvolvedor de Bots e Game Dev. Soluções tecnológicas inovadoras.">
+  <meta name="author" content="Renegado">
+  
+  <title>Renegado | Portfólio Profissional</title>
+
+  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/160092361?v=4">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ====== HEADER ====== -->
+
+  <div id="loading-screen">
+    <div class="spinner"></div>
+  </div>
+
   <header>
     <nav class="navbar">
       <div class="container">
-        <a href="#" class="logo">Renegado</a>
+        <a href="#" class="logo" aria-label="Home">Renegado<span>.</span></a>
+        
         <ul class="nav-links">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#skills">Habilidades</a></li>
@@ -22,7 +35,8 @@
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-        <div class="hamburger">
+
+        <div class="hamburger" aria-label="Abrir menu" role="button">
           <span></span>
           <span></span>
           <span></span>
@@ -31,58 +45,52 @@
     </nav>
   </header>
 
-  <!-- ====== HERO ====== -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="title">Renegado</h1>
-        <div class="animated-text">
-          <span class="text first-text">Analista de Redes</span>
-          <span class="text sec-text">Criador de Bots</span>
-          <span class="text third-text">Desenvolvedor de Jogos</span>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="title">Olá, eu sou o <span>Renegado</span></h1>
+          <div class="animated-text">
+            <div class="text">Analista de Redes</div>
+            <div class="text">Criador de Bots</div>
+            <div class="text">Desenvolvedor de Jogos</div>
+          </div>
+          <p class="subtitle">Transformando ideias em soluções tecnológicas inovadoras aos 16 anos.</p>
+          <div class="hero-buttons">
+            <a href="#contato" class="btn btn-primary">Fale Comigo</a>
+            <a href="#projetos" class="btn btn-outline">Ver Projetos</a>
+          </div>
         </div>
-        <p class="subtitle">Transformando ideias em soluções tecnológicas inovadoras</p>
-        <div class="hero-buttons">
-          <a href="#contato" class="btn btn-primary">Contato</a>
-          <a href="#projetos" class="btn btn-outline">Projetos</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <div class="glowing-circle">
-          <span></span>
-          <span></span>
-          <div class="image">
-            <img src="https://avatars.githubusercontent.com/u/160092361?v=4" alt="Avatar Renegado" class="avatar">
+
+        <div class="hero-image">
+          <div class="glowing-circle">
+            <div class="image-inner">
+              <img src="https://avatars.githubusercontent.com/u/160092361?v=4" alt="Avatar de Renegado" class="avatar">
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="scroll-down">
-      <span>Scroll Down</span>
-      <i class="fas fa-arrow-down"></i>
-    </div>
+    
+    <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
+      <span>Role para baixo</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </section>
 
-  <!-- ====== SOBRE ====== -->
   <section id="sobre" class="section reveal">
     <div class="container">
       <h2 class="section-title"><span>Sobre</span> mim</h2>
       <div class="about-content">
         <div class="about-text">
           <p class="highlight">
-            Tenho 16 anos e já domino diversas áreas da tecnologia. Sou <strong>Analista de Redes</strong> com experiência em protocolos, segurança e infraestrutura.
+            Especialista em infraestrutura e automação com foco em resultados reais.
           </p>
           <p>
-            Minha especialidade é criar <strong>bots avançados para Discord</strong> com funcionalidades personalizadas, além de desenvolver <strong>jogos para PC e mobile</strong> com experiências imersivas.
+            Sou <strong>Analista de Redes</strong> focado em segurança e performance. No desenvolvimento, destaco-me na criação de <strong>bots avançados para Discord</strong> e no desenvolvimento de <strong>jogos</strong> cross-platform (PC e Mobile).
           </p>
+          
           <div class="info">
-            <div class="info-item">
-              <i class="fas fa-user-tie"></i>
-              <div>
-                <h3>Nome</h3>
-                <p>Renegado</p>
-              </div>
-            </div>
             <div class="info-item">
               <i class="fas fa-envelope"></i>
               <div>
@@ -99,144 +107,114 @@
             </div>
           </div>
         </div>
+
         <div class="about-skills">
           <div class="skill-progress">
-            <h3>Python <span>90%</span></h3>
-            <div class="progress-bar"><span style="width: 90%"></span></div>
+            <h3>Python <span class="percent">90%</span></h3>
+            <div class="progress-bar"><span data-width="90%"></span></div>
           </div>
           <div class="skill-progress">
-            <h3>JavaScript <span>85%</span></h3>
-            <div class="progress-bar"><span style="width: 85%"></span></div>
+            <h3>JavaScript <span class="percent">85%</span></h3>
+            <div class="progress-bar"><span data-width="85%"></span></div>
           </div>
           <div class="skill-progress">
-            <h3>Redes <span>80%</span></h3>
-            <div class="progress-bar"><span style="width: 80%"></span></div>
+            <h3>Redes / Infra <span class="percent">80%</span></h3>
+            <div class="progress-bar"><span data-width="80%"></span></div>
           </div>
           <div class="skill-progress">
-            <h3>Desenvolvimento de Jogos <span>75%</span></h3>
-            <div class="progress-bar"><span style="width: 75%"></span></div>
+            <h3>Game Dev <span class="percent">75%</span></h3>
+            <div class="progress-bar"><span data-width="75%"></span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== HABILIDADES ====== -->
   <section id="skills" class="section reveal bg-dark">
     <div class="container">
       <h2 class="section-title">Minhas <span>Habilidades</span></h2>
       <div class="skills-grid">
         <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-python"></i>
-          </div>
+          <i class="fab fa-python skill-icon"></i>
           <h3>Python</h3>
-          <p>Desenvolvimento de scripts, automação e bots avançados</p>
+          <p>Automação complexa, Web Scraping e Scripts de infraestrutura.</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-js"></i>
-          </div>
+          <i class="fab fa-js skill-icon"></i>
           <h3>JavaScript</h3>
-          <p>Desenvolvimento web e aplicações interativas</p>
+          <p>Desenvolvimento focado em Node.js e interfaces modernas.</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-node"></i>
-          </div>
-          <h3>Node.js</h3>
-          <p>Aplicações server-side e back-end eficientes</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fa-brands fa-discord"></i>
-          </div>
+          <i class="fab fa-discord skill-icon"></i>
           <h3>Discord.js</h3>
-          <p>Bots personalizados com funcionalidades exclusivas</p>
+          <p>Bots de alta escala com dashboards e sistemas globais.</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fas fa-network-wired"></i>
-          </div>
+          <i class="fas fa-network-wired skill-icon"></i>
           <h3>Redes</h3>
-          <p>Configuração, segurança e otimização de redes</p>
+          <p>Segurança cibernética, protocolos TCP/IP e gestão de servidores.</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fas fa-gamepad"></i>
-          </div>
+          <i class="fas fa-gamepad skill-icon"></i>
           <h3>Game Dev</h3>
-          <p>Criação de jogos para diversas plataformas</p>
+          <p>Mecânicas de jogo em C# (Unity) ou Lua (Roblox).</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database skill-icon"></i>
+          <h3>Bancos de Dados</h3>
+          <p>Experiência com MongoDB, SQLite e PostreSQL.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== SERVIÇOS ====== -->
   <section id="servicos" class="section reveal">
     <div class="container">
       <h2 class="section-title">Meus <span>Serviços</span></h2>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-network-wired"></i>
-          </div>
-          <h3>Administração de Redes</h3>
-          <p>Configuração, otimização e segurança de redes locais e remotas com soluções personalizadas.</p>
-          <a href="#contato" class="btn-service">Saiba mais <i class="fas fa-arrow-right"></i></a>
+          <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Gestão de Redes</h3>
+          <p>Segurança e otimização de tráfego para empresas e projetos online.</p>
+          <a href="#contato" class="btn-service">Consultar <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-brands fa-discord"></i>
-          </div>
-          <h3>Bots Discord</h3>
-          <p>Automação, moderação e integrações avançadas para servidores de qualquer tamanho.</p>
-          <a href="#contato" class="btn-service">Saiba mais <i class="fas fa-arrow-right"></i></a>
+          <div class="service-icon"><i class="fab fa-robot"></i></div>
+          <h3>Desenvolvimento de Bots</h3>
+          <p>Sistemas de economia, tickets e moderação automática sob medida.</p>
+          <a href="#contato" class="btn-service">Consultar <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-gamepad"></i>
-          </div>
-          <h3>Desenvolvimento de Jogos</h3>
-          <p>Criação de experiências imersivas para PC, mobile e Roblox com mecânicas inovadoras.</p>
-          <a href="#contato" class="btn-service">Saiba mais <i class="fas fa-arrow-right"></i></a>
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Desenvolvimento Geral</h3>
+          <p>Criação de jogos, ferramentas de automação e APIs personalizadas.</p>
+          <a href="#contato" class="btn-service">Consultar <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== PROJETOS ====== -->
   <section id="projetos" class="section reveal bg-dark">
     <div class="container">
       <h2 class="section-title">Meus <span>Projetos</span></h2>
+      
       <div class="projects-tabs">
         <button class="tab-btn active" data-tab="all">Todos</button>
         <button class="tab-btn" data-tab="bots">Bots</button>
         <button class="tab-btn" data-tab="games">Jogos</button>
-        <button class="tab-btn" data-tab="other">Outros</button>
       </div>
+
       <div class="projects-grid">
-        <!-- Bot Kajuri -->
         <div class="project-card" data-category="bots">
-          <div class="project-badge">Em Desenvolvimento</div>
           <div class="project-image">
-            <img src="https://wallpapercave.com/uwp/uwp3547390.jpeg" alt="Bot Kajuri">
-            <div class="project-links">
-              <a href="#" class="project-link" title="Ver código no GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" class="project-link" title="Ver demonstração"><i class="fas fa-external-link-alt"></i></a>
+            <img src="https://wallpapercave.com/uwp/uwp3547390.jpeg" alt="Bot Kajuri Preview">
+            <div class="project-overlay">
+              <a href="#" class="btn btn-primary">Ver Demo</a>
             </div>
           </div>
           <div class="project-info">
-            <div class="project-header">
-              <h3>Bot Kajuri</h3>
-              <span class="project-global">Global</span>
-            </div>
-            <p class="project-description">Bot multifuncional para Discord com sistema de tickets, moderação avançada e integração com APIs externas.</p>
-            <div class="project-features">
-              <span><i class="fas fa-check"></i> Sistema de tickets</span>
-              <span><i class="fas fa-check"></i> Moderação automática</span>
-              <span><i class="fas fa-check"></i> Integração com APIs</span>
-            </div>
+            <h3>Bot Kajuri <span>(Global)</span></h3>
+            <p>Bot multifuncional com Tickets, Moderação e API externa.</p>
             <div class="project-tech">
               <span>Node.js</span>
               <span>Discord.js</span>
@@ -244,32 +222,17 @@
             </div>
           </div>
         </div>
-        <!-- Loading Screen -->
-<div id="loading-screen">
-  <div class="spinner"></div>
-</div>
 
-
-        <!-- Bot IMPERA PROJECT -->
         <div class="project-card" data-category="bots">
           <div class="project-image">
-            <img src="https://wallpapercave.com/wp/wp4462546.jpg" alt="Bot IMPERA PROJECT">
-            <div class="project-links">
-              <a href="#" class="project-link" title="Ver código no GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" class="project-link" title="Ver demonstração"><i class="fas fa-external-link-alt"></i></a>
+            <img src="https://wallpapercave.com/wp/wp4462546.jpg" alt="Bot Impera Preview">
+            <div class="project-overlay">
+              <a href="#" class="btn btn-primary">GitHub</a>
             </div>
           </div>
           <div class="project-info">
-            <div class="project-header">
-              <h3>Bot</h3>
-              <span class="project-roles">Economia • Automação</span>
-            </div>
-            <p class="project-description">Bot com integração completa ao Roblox, sistema de economia virtual e automação avançada para comunidades.</p>
-            <div class="project-features">
-              <span><i class="fas fa-check"></i> Integração Roblox</span>
-              <span><i class="fas fa-check"></i> Sistema econômico</span>
-              <span><i class="fas fa-check"></i> Automação de tarefas</span>
-            </div>
+            <h3>Impera Project</h3>
+            <p>Integração Roblox com sistema de economia virtual avançado.</p>
             <div class="project-tech">
               <span>Python</span>
               <span>Roblox API</span>
@@ -281,14 +244,14 @@
     </div>
   </section>
 
-  <!-- ====== CONTATO ====== -->
   <section id="contato" class="section reveal">
     <div class="container">
       <h2 class="section-title">Entre em <span>Contato</span></h2>
       <div class="contact-content">
         <div class="contact-info">
-          <h3>Vamos conversar!</h3>
-          <p>Estou disponível para novos projetos e colaborações. Entre em contato e responderei o mais rápido possível.</p>
+          <h3>Vamos criar algo incrível?</h3>
+          <p>Estou aberto para propostas de freelance, parcerias ou consultoria técnica.</p>
+          
           <div class="contact-details">
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
@@ -304,79 +267,56 @@
                 <span>seementhis</span>
               </div>
             </div>
-            <div class="contact-item">
-              <i class="fab fa-github"></i>
-              <div>
-                <h4>GitHub</h4>
-                <a href="https://github.com/renegadothedev" target="_blank">renegadothedev</a>
-              </div>
-            </div>
           </div>
+
           <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
-            <a href="https://github.com/renegadothedev" class="social-link"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/renegadothedev" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link" aria-label="Discord"><i class="fab fa-discord"></i></a>
           </div>
         </div>
+
         <form class="contact-form">
           <div class="form-group">
-            <input type="text" placeholder="Seu nome" required>
+            <input type="text" name="name" placeholder="Seu Nome" required>
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Seu email" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Assunto">
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
           </div>
-          <div class="form-group">
-            <textarea placeholder="Sua mensagem" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- ====== FOOTER ====== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-about">
-          <h3>Renegado</h3>
-          <p>Transformando ideias em soluções tecnológicas inovadoras.</p>
+          <h3>Renegado<span>.</span></h3>
+          <p>Soluções tecnológicas com foco em performance e inovação.</p>
         </div>
         <div class="footer-links">
-          <h3>Links Rápidos</h3>
+          <h4>Navegação</h4>
           <ul>
+            <li><a href="#home">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#servicos">Serviços</a></li>
             <li><a href="#projetos">Projetos</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h3>Contato</h3>
-          <ul>
-            <li><i class="fas fa-envelope"></i> joaovitorbds752@gmail.com</li>
-            <li><i class="fab fa-discord"></i> seementhis</li>
-            <li><i class="fab fa-github"></i> renegadothedev</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Renegado. Todos os direitos reservados.</p>
-        <div class="footer-social">
-          <a href="https://github.com/renegadothedev"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-discord"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
+        <p>&copy; 2026 Renegado. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
 
-  <!-- ====== BACK TO TOP ====== -->
-  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+  <a href="#" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 
   <script src="script.js"></script>
 </body>
