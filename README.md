@@ -1,65 +1,59 @@
-# 💻 RenegadoTheDev | Full-Stack & Network Analyst
+# 💻 Renegado | Full-Stack Developer & Security Enthusiast
 
-<p align="center">
-  <img src="https://avatars.githubusercontent.com/u/160092361?v=4" width="150" style="border-radius: 50%;" alt="Renegado Avatar">
+<p align="left">
+  <img src="https://img.shields.io/badge/PORTFOLIO-LIVE-orange?style=for-the-badge&logo=ghost" alt="Portfolio">
+  <img src="https://img.shields.io/github/stars/renegadothedev?style=for-the-badge&color=222" alt="Stars">
 </p>
 
-<p align="center">
-  <a href="https://renegadothedev.github.io/My-portfolio/">
-    <img src="https://img.shields.io/badge/🌐_Acesse_meu_Portfólio-Clique_Aqui-blueviolet?style=for-the-badge&logo=ghost" alt="Portfólio">
-  </a>
-</p>
+> I create bots and tools that make life easier. Skilled in JavaScript, Node.js, and Linux server management. Always learning, always building.
 
 ---
 
-## 🚀 Sobre Mim
+### 🛠️ Tech Stack
 
-Olá! Sou o **Renegado**, um desenvolvedor de 17 anos apaixonado por infraestrutura de redes e automação. Minha jornada envolve a criação de ecossistemas digitais, desde a segurança de redes até o desenvolvimento de bots complexos e experiências imersivas em jogos.
+#### 🧠 Core Technologies
+`Python` `JavaScript` `TypeScript` `Bash` `Node.js`
 
-* 📡 **Analista de Redes:** Focado em segurança, protocolos e performance.
-* 🤖 **Bot Developer:** Especialista em automações avançadas para Discord e integrações de API.
-* 🎮 **Game Dev:** Criando mundos interativos para PC e Mobile.
+#### 🎨 Frontend
+`React` `HTML5` `CSS3` `Tailwind`
 
----
+#### 🔧 Backend & DevOps
+`FastAPI` `Express` `Docker` `Linux` `Git`
 
-## 🛠️ Tecnologias & Habilidades
-
-### 🌐 Frontend & Design
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
-
-### ⚙️ Backend & Automação
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Discord.js](https://img.shields.io/badge/discord.js-5865F2?style=for-the-badge&logo=discord&logoColor=white)
-
-### 🔐 Infraestrutura
-![Networks](https://img.shields.io/badge/Redes_&_Segurança-00599C?style=for-the-badge&logo=cisco&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+#### 📂 Databases
+`MongoDB` `PostgreSQL` `SQLite`
 
 ---
 
-## 🏆 Projetos em Destaque
+### 🚀 Project Highlights
 
-| Projeto | Descrição | Status |
+| Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **Bot Kajuri** | Bot multifuncional global com sistema de tickets e economia. | `Em desenvolvimento` |
-| **Impera Project** | Automação avançada e integração de APIs com foco em Roblox. | `Concluído` |
-| **Network Monitor** | Ferramentas personalizadas para análise de tráfego e segurança. | `Privado` |
+| **VPN-Tor Suite** | Advanced privacy toolkit with VPN/Tor integration. | `Python` `Bash` |
+| **YouTube DL Pro** | High-performance media downloader (batch processing). | `Node.js` `Express` |
+| **Network Toolkit** | Comprehensive networking & security utility. | `Python` `Linux` |
+| **Kajuri Bot** | Multifunctional AI assistant with DeepSeek integration. | `Node.js` `API` |
 
 ---
 
-## 📫 Vamos nos conectar?
+### 📊 GitHub Insights
 
-Dê uma olhada nos meus repositórios ou entre em contato para colaborações:
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=renegadothedev&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=ff6b00&icon_color=ff6b00&text_color=888" height="150" alt="Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=renegadothedev&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=ff6b00&text_color=888" height="150" alt="Langs" />
+</p>
+
+---
+
+### 📫 Connect With Me
 
 * **Discord:** `seementhis`
-* **Email:** [joaovitorbds752@gmail.com](mailto:joaovitorbds752@gmail.com)
-* **GitHub:** [@renegadothedev](https://github.com/renegadothedev)
-
----
+* **Email:** `joaovitorbds752@gmail.com`
+* **Portfolio:** [renegadothedev.github.io/My-portfolio/](https://renegadothedev.github.io/My-portfolio/)
 
 <p align="center">
-  <i>"Transformando lógica em inovação."</i>
+  <br />
+  <img src="https://raw.githubusercontent.com/renegadothedev/renegadothedev/main/manifesto-badge.svg" alt="Developer Manifesto" onerror="this.style.display='none'">
+  <br />
+  <kbd>Transformando lógica em inovação.</kbd>
 </p>
