@@ -1,4 +1,4 @@
-````python?code_reference&code_event_index=1
+python?code_reference&code_event_index=1
 readme_content = """# [renegado_the_dev]
 
 > **Full-Stack Engineer & Network Security Analyst**
@@ -49,9 +49,3 @@ readme_content = """# [renegado_the_dev]
 with open("README.md", "w", encoding="utf-8") as f:
 f.write(readme\_content)
 
-```
-Aqui está o seu arquivo **README.md** perfeitamente formatado e pronto para uso no seu perfil do GitHub. Ele segue a estética minimalista e profissional que definimos, com todos os links, blocos de código e estatísticas funcionando corretamente.
-
-Seu arquivo README.md está pronto
-[file-tag: code-generated-file-0-1776122341084237720]
-```
