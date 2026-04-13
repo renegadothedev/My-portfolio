@@ -1,59 +1,42 @@
-# 💻 Renegado | Full-Stack Developer & Security Enthusiast
+# [renegado\_the\_dev]
 
-<p align="left">
-  <img src="https://img.shields.io/badge/PORTFOLIO-LIVE-orange?style=for-the-badge&logo=ghost" alt="Portfolio">
-  <img src="https://img.shields.io/github/stars/renegadothedev?style=for-the-badge&color=222" alt="Stars">
-</p>
+> Full-Stack Engineer & Network Security Analyst
+> Focusing on high-availability systems, automated security, and minimalist architecture.
 
-> I create bots and tools that make life easier. Skilled in JavaScript, Node.js, and Linux server management. Always learning, always building.
+[Deployments] [https://renegadothedev.github.io/My-portfolio/](https://renegadothedev.github.io/My-portfolio/)
+[Communication] joaovitorbds752@gmail.com
+[Identity] [https://github.com/renegadothedev](https://github.com/renegadothedev)
 
----
+-----
 
-### 🛠️ Tech Stack
+### 01 // CORE\_SPECIFICATIONS
 
-#### 🧠 Core Technologies
-`Python` `JavaScript` `TypeScript` `Bash` `Node.js`
+  * Architecture & Systems: Scalable Backend (Node.js, FastAPI), Distributed Systems, and Microservices.
+  * Security & Research: Network Analysis, Pentesting (OWASP), Traffic Obfuscation, and Automation.
+  * Interface Design: Minimalist Systems, Performance-First UI, React, and Tailwind.
 
-#### 🎨 Frontend
-`React` `HTML5` `CSS3` `Tailwind`
+### 02 // ACTIVE\_DEVELOPMENT
 
-#### 🔧 Backend & DevOps
-`FastAPI` `Express` `Docker` `Linux` `Git`
+  * [VPN-Tor Suite] :. Advanced network infrastructure for anonymity and secure tunneling.
+  * [Kajuri\_AI] :. Integration of Large Language Models (LLMs) into high-scale automated environments.
+  * [Elemental\_Engine] :. High-performance, low-latency mechanics for real-time multiplayer systems.
 
-#### 📂 Databases
-`MongoDB` `PostgreSQL` `SQLite`
+-----
 
----
+### 03 // TECH\_STACK
 
-### 🚀 Project Highlights
+{
+"languages": ["TypeScript", "Python", "Java", "Lua", "Bash"],
+"infrastructure": ["Docker", "Linux\_Kernel", "PostgreSQL", "Redis"],
+"security\_tools": ["Wireshark", "Nmap", "BurpSuite", "Metasploit"]
+}
 
-| Project | Description | Tech Stack |
-| :--- | :--- | :--- |
-| **VPN-Tor Suite** | Advanced privacy toolkit with VPN/Tor integration. | `Python` `Bash` |
-| **YouTube DL Pro** | High-performance media downloader (batch processing). | `Node.js` `Express` |
-| **Network Toolkit** | Comprehensive networking & security utility. | `Python` `Linux` |
-| **Kajuri Bot** | Multifunctional AI assistant with DeepSeek integration. | `Node.js` `API` |
+-----
 
----
+### 04 // ANALYTICS
 
-### 📊 GitHub Insights
+Github Stats: [https://github-readme-stats.vercel.app/api?username=renegadothedev\&show\_icons=true\&theme=transparent\&hide\_border=true\&title\_color=ff6b00\&icon\_color=ff6b00\&text\_color=8c8c8c\&count\_private=true](https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3Drenegadothedev%26show_icons%3Dtrue%26theme%3Dtransparent%26hide_border%3Dtrue%26title_color%3Dff6b00%26icon_color%3Dff6b00%26text_color%3D8c8c8c%26count_private%3Dtrue)
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=renegadothedev&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=ff6b00&icon_color=ff6b00&text_color=888" height="150" alt="Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=renegadothedev&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=ff6b00&text_color=888" height="150" alt="Langs" />
-</p>
+-----
 
----
-
-### 📫 Connect With Me
-
-* **Discord:** `seementhis`
-* **Email:** `joaovitorbds752@gmail.com`
-* **Portfolio:** [renegadothedev.github.io/My-portfolio/](https://renegadothedev.github.io/My-portfolio/)
-
-<p align="center">
-  <br />
-  <img src="https://raw.githubusercontent.com/renegadothedev/renegadothedev/main/manifesto-badge.svg" alt="Developer Manifesto" onerror="this.style.display='none'">
-  <br />
-  <kbd>Transformando lógica em inovação.</kbd>
-</p>
+EST. 2026 // LOGIC\_OVER\_EVERYTHING

@@ -3,93 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renegado | Full-Stack Developer</title>
+    <title>Renegado // Full-Stack Architect</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="profile-header">
-                <div class="avatar-container">
-                    <img src="https://github.com/renegadothedev.png" alt="Renegado">
-                </div>
-                <div class="profile-info">
-                    <h1>RENEGADO</h1>
-                    <p class="subtitle">FULL-STACK DEVELOPER & SECURITY ENTHUSIAST</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                        <a href="#"><i class="fas fa-shield-halved"></i></a>
-                    </div>
-                </div>
+    <div class="spotlight"></div>
+    <div class="noise"></div>
+
+    <nav class="navbar fade-in">
+        <div class="nav-inner">
+            <span class="logo">R_DEV</span>
+            <div class="nav-links">
+                <a href="#projects">Work</a>
+                <a href="#stack">Stack</a>
+                <a href="mailto:joaovitorbds752@gmail.com" class="cta">Connect</a>
             </div>
-            <p class="bio text-muted">"I create bots and tools that make life easier. Always learning, always building."</p>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <div class="badge fade-in">Available for System Architecture</div>
+            <h1 class="hero-title fade-in">RENEGADO</h1>
+            <p class="hero-sub fade-in">Full-Stack Engineer specialized in <span>Security</span> and <span>High-Performance Systems</span>.</p>
         </header>
 
-        <hr class="divider">
-
-        <section class="section">
-            <h2 class="section-title"><i class="fas fa-terminal"></i> TECH STACK</h2>
-            <div class="grid-stack">
-                <div class="stack-card">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>React / HTML5</li>
-                        <li>Tailwind / CSS3</li>
-                        <li>TypeScript</li>
-                    </ul>
+        <section id="projects" class="reveal">
+            <div class="label">Featured Work</div>
+            <div class="bento-grid">
+                <div class="bento-card large">
+                    <div class="card-content">
+                        <span class="tag">Security</span>
+                        <h3>VPN-Tor Suite</h3>
+                        <p>High-anonymity infrastructure focusing on traffic obfuscation and secure tunneling.</p>
+                    </div>
+                    <div class="card-arrow">→</div>
                 </div>
-                <div class="stack-card">
-                    <h3>Backend & DevOps</h3>
-                    <ul>
-                        <li>Node.js / Express</li>
-                        <li>FastAPI / Python</li>
-                        <li>Docker / Linux</li>
-                    </ul>
+                <div class="bento-card">
+                    <div class="card-content">
+                        <span class="tag">Automation</span>
+                        <h3>Kajuri Bot</h3>
+                        <p>AI agent integration using DeepSeek for large scale environments.</p>
+                    </div>
                 </div>
-                <div class="stack-card">
-                    <h3>Databases</h3>
-                    <ul>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                        <li>SQLite</li>
-                    </ul>
+                <div class="bento-card">
+                    <div class="card-content">
+                        <span class="tag">Engines</span>
+                        <h3>Chaos Arena</h3>
+                        <p>Low-latency faction system for real-time game environments.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <h2 class="section-title"><i class="fas fa-code-branch"></i> FEATURED PROJECTS</h2>
-            <div class="projects-list">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>VPN-Tor Suite</h3>
-                        <span class="status">Live</span>
-                    </div>
-                    <p>Advanced privacy toolkit with VPN and Tor integration.</p>
-                    <div class="tags">
-                        <span>Python</span><span>Bash</span><span>Docker</span>
-                    </div>
+        <section id="stack" class="reveal">
+            <div class="label">Core Architecture</div>
+            <div class="stack-grid">
+                <div class="stack-item">
+                    <h4>Languages</h4>
+                    <ul><li>TypeScript</li><li>Python</li><li>Java</li><li>Lua</li></ul>
                 </div>
-
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>YouTube DL Pro</h3>
-                    </div>
-                    <p>High-performance media downloader with batch processing.</p>
-                    <div class="tags">
-                        <span>Node.js</span><span>Express</span>
-                    </div>
+                <div class="stack-item">
+                    <h4>Backend</h4>
+                    <ul><li>Node.js</li><li>FastAPI</li><li>Docker</li><li>Linux</li></ul>
+                </div>
+                <div class="stack-item">
+                    <h4>Storage</h4>
+                    <ul><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>SQLite</li></ul>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p>DESIGNED BY RENEGADO © 2026</p>
+            <div class="footer-wrap">
+                <p>© 2026 // RENEGADO</p>
+                <div class="socials">
+                    <a href="https://github.com/renegadothedev">GitHub</a>
+                    <a href="#">Discord</a>
+                </div>
+            </div>
         </footer>
-    </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

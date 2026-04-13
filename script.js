@@ -1,22 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Renegado Portfolio Loaded.");
+    // Spotlight Effect
+    const spotlight = document.querySelector('.spotlight');
+    document.addEventListener('mousemove', (e) => {
+        const x = (e.clientX / window.innerWidth) * 100;
+        const y = (e.clientY / window.innerHeight) * 100;
+        spotlight.style.setProperty('--x', `${x}%`);
+        spotlight.style.setProperty('--y', `${y}%`);
+    });
 
-    // Efeito simples de revelação nas seções
-    const sections = document.querySelectorAll('.section');
-    
+    // Reveal on Scroll
+    const observerOptions = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('active');
             }
         });
-    }, { threshold: 0.1 });
+    }, observerOptions);
 
-    sections.forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'all 0.8s ease-out';
-        observer.observe(section);
-    });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Smooth reveal for Hero
+    setTimeout(() => {
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        });
+    }, 100);
 });
